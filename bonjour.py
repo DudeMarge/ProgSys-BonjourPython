@@ -7,9 +7,12 @@ import time
 def main():
     print("Bonjour Python!")
     print("\nJe suis Marjorie Dudemaine")
-    n = 10
-    print(f"et je sais compter jusqu'à {n}: ", end="", flush=True)
-    for i in range(1, n+1):
+    compter_jusqua(10)
+
+
+def compter_jusqua(limite_sup):
+    print(f"et je sais compter jusqu'à {limite_sup}: ", end="", flush=True)
+    for i in range(1, limite_sup + 1):
         time.sleep(0.25)
         print(i, " ", end="", flush=True)
     print()
